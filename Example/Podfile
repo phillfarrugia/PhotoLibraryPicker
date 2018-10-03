@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PhotoLibraryPicker_Tests' do
+  pod 'PhotoLibraryPicker', :path => '../'
+  
+  
+end
