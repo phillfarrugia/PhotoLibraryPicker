@@ -15,20 +15,6 @@ pod 'PhotoLibraryPicker'
 github "phillfarrugia/PhotoLibraryPicker"
 ```
 
-### Installation with Swift Package Manager
-
-```swift
-import PackageDescription
-
-let package = Package(
-    name: "HelloWorld",
-    dependencies: [
-        .Package(url: "https://github.com/phillfarrugia/PhotoLibraryPicker.git", majorVersion: 0, minor: 1)
-    ]
-)
-
-```
-
 ## Usage
 
 ```swift
