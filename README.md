@@ -23,7 +23,7 @@ import PackageDescription
 let package = Package(
     name: "HelloWorld",
     dependencies: [
-        .Package(url: "https://github.com/phillfarrugia/PhotoLibraryPicker.git", majorVersion: 1, minor: 0)
+        .Package(url: "https://github.com/phillfarrugia/PhotoLibraryPicker.git", majorVersion: 0, minor: 1)
     ]
 )
 
@@ -34,13 +34,13 @@ let package = Package(
 ```swift
 class ViewController: UIViewController {
 
-	// Instantiate a PhotoLibraryPicker
+    // Instantiate a PhotoLibraryPicker
     let imagePickerHandler = PhotoLibraryPicker()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		// Present Photo Library Picker
+	// Present Photo Library Picker
         imagePickerHandler.presentLibraryPicker(fromViewController: self) { (result) in
             switch result {
             case let .completed(asset):
